@@ -5,16 +5,16 @@ export const Carousel = ({ data }) => {
   const [slide, setSlide] = useState(0);
 
   const nextSlide = () => {
-    setSlide(slide === data.length - 1 ? 0 : slide + 1)
+    setSlide(slide === data.length - 1 ? 0 : slide + 1);
   };
 
   const prevSlide = () => {
-    setSlide(slide === 0 ? data.length - 1 : slide - 1)
+    setSlide(slide === 0 ? data.length - 1 : slide - 1);
   };
 
   return (
     <div className="carousel">
-      <BsArrowLeftCircleFill className="arrow arrow-left" onClick={prevSlide}/>
+      <BsArrowLeftCircleFill className="arrow arrow-left" onClick={prevSlide} />
       {data.map((item, idx) => {
         return (
           <img
@@ -25,7 +25,10 @@ export const Carousel = ({ data }) => {
           />
         );
       })}
-      <BsArrowRightCircleFill className="arrow arrow-right" onClick={nextSlide}/>
+      <BsArrowRightCircleFill
+        className="arrow arrow-right"
+        onClick={nextSlide}
+      />
     </div>
   );
 };

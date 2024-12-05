@@ -13,9 +13,8 @@ header {
   align-items: center;
   padding: 10px 20px;
   height: 15vh;
-  /* border: 1px solid red; */
   margin: auto;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .contact {
@@ -102,7 +101,7 @@ header {
   display: flex;
   letter-spacing: 2px;
   color: #b98a50;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 100vw;
   text-align: center;
   justify-content: space-evenly;
@@ -160,4 +159,29 @@ ul {
   display: flex;
   position: absolute;
   bottom: 1rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: -18rem;
+  left: -3.5rem;
+  color: #b98a50;
+  letter-spacing: 2px;
+  margin: 10;
+}
+
+.footer a{
+  text-decoration: none;
+  color: #b98a50;
+
+}
+
+.footer a:hover {
+  color: #efbe82;
+}
+
+.email-footer {
+  margin: 0 50px ;
 }
