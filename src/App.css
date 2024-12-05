@@ -1,18 +1,163 @@
 * {
-    background-color: #050505;
+  background-color: #020d0c;
+  font-family: "sporty-pro", sans-serif;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  height: 15vh;
+  /* border: 1px solid red; */
+  margin: auto;
+  border: 1px solid red;
+}
+
+.contact {
+  max-width: 400px;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #b98a50;
+}
+
+.contact a:hover {
+  color: #efbe82;
+}
+
+.email {
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.phone-number {
+  margin-top: 5px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.logo-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo-img {
-    width: 20rem;
-    height: 10rem;
-    border: solid, 1px, red;
-    margin: auto;
+  /* border: 1px solid red; */
+  cursor: pointer;
+  height: 100px;
+  width: auto;
+  max-width: 300px;
+  flex: 1;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  left: 850px;
 }
 
-.navbar {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    border: solid, 1px, red;
+.facebook-logo {
+  cursor: pointer;
+  /* margin-left: auto; */
+  /* border: 1px solid red; */
+}
 
+.home-image {
+  color: inherit;
+}
+
+.hero {
+  width: 100%;
+  text-align: center;
+
+  display: flex;
+  background-size: cover;
+}
+
+.content {
+  display: flex;
+  color: inherit;
+  justify-content: flex-end;
+  align-items: flex-end;
+  max-height: auto;
+  text-align: center;
+}
+
+.home-image {
+  box-shadow: inset 0 0 2000px rgba(0, 0, 0.5);
+}
+
+.section {
+  background-image: url("./assets/home-img.jpg");
+}
+
+.service-list {
+  display: flex;
+  letter-spacing: 2px;
+  color: #b98a50;
+  border: 1px solid red;
+  width: 100vw;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+ul {
+  margin: 20px 15px;
+  font-size: 12.5px;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 400px;
+  position: relative;
+  left: 625px;
+  bottom: -100px;
+}
+
+.slide {
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 7px #666;
+  width: 100%;
+  height: 100%;
+}
+
+.slide-hidden {
+  display: none;
+}
+
+.arrow {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  color: white;
+  filter: drop-shadow(0px 0px 5px #555);
+}
+
+.arrow:hover {
+  cursor: pointer;
+}
+
+.arrow-left {
+  left: 1rem;
+}
+
+.arrow-right {
+  right: 1rem;
+}
+
+.indicators {
+  display: flex;
+  position: absolute;
+  bottom: 1rem;
 }
