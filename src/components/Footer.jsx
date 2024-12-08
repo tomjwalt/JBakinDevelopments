@@ -13,7 +13,8 @@ const Footer = () => {
     return <a href={`tel:${phone}`}>{children}</a>;
   };
   return (
-    <div className="footer">
+    <div className="body">
+      <div className="footer">
       <div className="email-footer">
         <Mailto
           className="email-link"
@@ -28,6 +29,8 @@ const Footer = () => {
         <Callto phone="07827028940">Or call on 07827028940</Callto>
       </div>
     </div>
+    </div>
+    
   );
 };
 

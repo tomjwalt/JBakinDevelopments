@@ -1,5 +1,5 @@
 * {
-  background-color: #020d0c;
+  /* background-color: #020d0c; */
   font-family: "sporty-pro", sans-serif;
   font-style: normal;
   margin: 0;
@@ -14,7 +14,8 @@ header {
   padding: 10px 20px;
   height: 15vh;
   margin: auto;
-  /* border: 1px solid red; */
+  /* background-color: #55555523; */
+  background-color: #1b1b1b3f;
 }
 
 .contact {
@@ -75,6 +76,8 @@ header {
 .hero {
   width: 100%;
   text-align: center;
+  background-color: #1b1b1b3f;
+
 
   display: flex;
   background-size: cover;
