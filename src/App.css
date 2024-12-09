@@ -7,6 +7,7 @@
   box-sizing: border-box;
 }
 
+
 header {
   display: flex;
   justify-content: space-between;
@@ -15,6 +16,10 @@ header {
   height: 15vh;
   margin: auto;
   /* background-color: #55555523; */
+  background-color: #1b1b1b3f;
+}
+
+.hero {
   background-color: #1b1b1b3f;
 }
 
@@ -76,8 +81,7 @@ header {
 .hero {
   width: 100%;
   text-align: center;
-  background-color: #1b1b1b3f;
-
+  
 
   display: flex;
   background-size: cover;

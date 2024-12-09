@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import Logo from "../assets/logo-cropped-2.png";
 import FacebookLogo from "../assets/icons8-facebook.svg";
 import ReactDOM from "react-dom";
 import styled from "styled-components";
+import { useEffect } from "react";
 
 const navbar = () => {
   const Mailto = ({ email, subject = "", body = "", children }) => {
@@ -16,7 +17,6 @@ const navbar = () => {
   const Callto = ({ phone, children }) => {
     return <a href={`tel:${phone}`}>{children}</a>;
   };
-
   return (
     <header>
       <div className="contact">

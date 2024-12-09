@@ -17,8 +17,6 @@ const subheading = () => {
           <ul>Bricklaying</ul>
           <ul>General Building</ul>
         </div>
-
-        {/* <img className="home-image" src={HomeImage} alt="" /> */}
       </div>
     </section>
   );
