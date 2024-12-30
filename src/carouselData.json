@@ -1,11 +1,11 @@
 {
   "slides": [
       {
-          "src": "./assets/home-img.jpg",
+          "src": "../assets/home-img.jpg",
           "alt": "home-image"
       },
       {
-          "src": "./assets/carousel1.jpg",
+          "src": "../assets/carousel1.jpg",
           "alt": "carousel1"
       },
       {
