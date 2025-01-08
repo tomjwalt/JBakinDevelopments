@@ -7,29 +7,32 @@
   box-sizing: border-box;
 }
 
-
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  height: 15vh;
-  margin: auto;
-  /* background-color: #55555523; */
   background-color: #1b1b1b3f;
 }
 
 .hero {
+  height: 5vh; /* Adjust to take up most of the space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #1b1b1b3f;
 }
 
 .contact {
-  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact a {
   text-decoration: none;
   color: #b98a50;
+  
 }
 
 .contact a:hover {
@@ -39,6 +42,7 @@ header {
 .email {
   letter-spacing: 2px;
   text-align: center;
+  margin: 5px 0;
 }
 
 .phone-number {
@@ -51,7 +55,7 @@ header {
 .logo-container {
   flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -81,7 +85,6 @@ header {
 .hero {
   width: 100%;
   text-align: center;
-  
 
   display: flex;
   background-size: cover;
@@ -172,17 +175,17 @@ ul {
   display: flex;
   justify-content: center;
   position: relative;
-  bottom: -18rem;
+  bottom: -14rem;
   left: -3.5rem;
   color: #b98a50;
   letter-spacing: 2px;
   margin: 10;
+  align-items: center;
 }
 
-.footer a{
+.footer a {
   text-decoration: none;
   color: #b98a50;
-
 }
 
 .footer a:hover {
@@ -190,5 +193,62 @@ ul {
 }
 
 .email-footer {
-  margin: 0 50px ;
+  margin: 0 50px;
 }
+
+.information-text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #b98a50;
+  position: absolute;
+  bottom: 100px;
+}
+
+.text-container {
+  position: relative;
+}
+
+.specailist-list {
+  position: absolute;
+  color: #b98a50;
+  justify-content: center;
+  align-items: center;
+}
+
+.body {
+  position: absolute;
+}
+
+.paragraph {
+  color: #b98a50;
+  text-align: center;
+  position: relative;
+  top: 175px;
+  letter-spacing: 2px;
+  padding: 0px 50px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+header {
+  height: 15vh;
+}
+
+.email-footer {
+  border: 1px solid #b98a50;
+  padding: 10px 10px 10px 10px;
+  background-color: #091110;
+  border-radius: 2rem;
+}
+
+.phone-footer {
+  border: 1px solid #b98a50;
+  padding: 10px 10px 10px 10px;
+  background-color: #091110;
+  border-radius: 2rem;
+}
+

@@ -1,244 +1,136 @@
 import React, { useState, useEffect } from "react";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
+import HomeImg from "../assets/home-img.jpg";
+import Carousel1 from "../assets/carousel1.jpg";
+import Carousel2 from "../assets/carousel2.jpg";
+import Carousel3 from "../assets/carousel3.jpg";
+import Carousel4 from "../assets/carousel4.jpg";
+import Carousel5 from "../assets/carousel5.jpg";
+import Carousel6 from "../assets/carousel6.jpg";
+import Carousel7 from "../assets/carousel7.jpg";
+import Carousel8 from "../assets/carousel8.jpg";
+import Carousel9 from "../assets/carousel9.jpg";
+import Carousel10 from "../assets/carousel10.jpg";
+import Carousel11 from "../assets/carousel11.jpg";
+import Carousel12 from "../assets/carousel12.jpg";
+import Carousel13 from "../assets/carousel13.jpg";
+import Carousel14 from "../assets/carousel14.jpg";
+import Carousel15 from "../assets/carousel15.jpg";
+import Carousel16 from "../assets/carousel16.jpg";
+import Carousel17 from "../assets/carousel17.jpg";
+import Carousel18 from "../assets/carousel18.jpg";
+import Carousel19 from "../assets/carousel19.jpg";
+import Carousel20 from "../assets/carousel20.jpg";
+import Carousel21 from "../assets/carousel21.jpg";
+import Carousel22 from "../assets/carousel22.jpg";
+import Carousel23 from "../assets/carousel23.jpg";
+import Carousel24 from "../assets/carousel24.jpg";
+import Carousel25 from "../assets/carousel25.jpg";
+import Carousel26 from "../assets/carousel26.jpg";
+import Carousel27 from "../assets/carousel27.jpg";
+import Carousel28 from "../assets/carousel28.jpg";
+import Carousel29 from "../assets/carousel29.jpg";
+import Carousel30 from "../assets/carousel30.jpg";
+import Carousel31 from "../assets/carousel31.jpg";
+import Carousel32 from "../assets/carousel32.jpg";
+import Carousel34 from "../assets/carousel34.jpg";
+import Carousel35 from "../assets/carousel35.jpg";
+import Carousel36 from "../assets/carousel36.jpg";
+import Carousel37 from "../assets/carousel37.jpg";
+import Carousel38 from "../assets/carousel38.jpg";
+import Carousel39 from "../assets/carousel39.jpg";
+import Carousel40 from "../assets/carousel40.jpg";
+import Carousel41 from "../assets/carousel41.jpg";
+import Carousel42 from "../assets/carousel42.jpg";
+import Carousel43 from "../assets/carousel43.jpg";
+import Carousel44 from "../assets/carousel44.jpg";
+import Carousel45 from "../assets/carousel45.jpg";
+import Carousel46 from "../assets/carousel46.jpg";
+import Carousel47 from "../assets/carousel47.jpg";
+import Carousel48 from "../assets/carousel48.jpg";
+import Carousel49 from "../assets/carousel49.jpg";
+import Carousel50 from "../assets/carousel50.jpg";
+import Carousel51 from "../assets/carousel51.jpg";
+import Carousel52 from "../assets/carousel52.jpg";
+import Carousel53 from "../assets/carousel53.jpg";
 
 export const Carousel = () => {
-  const data = [
-    {
-      src: "/assets/home-img.jpg",
-      alt: "home-image"
-    },
-    {
-      src: "../assets/carousel1.jpg",
-      alt: "carousel1"
-    },
-    {
-      src: "../assets/carousel2.jpg",
-      alt: "carousel2"
-    },
-    {
-      src: "../assets/carousel3.jpg",
-      alt: "carousel3"
-    },
-    {
-      src: "../assets/carousel4.jpg",
-      alt: "carousel4"
-    },
-    {
-      src: "../assets/carousel5.jpg",
-      alt: "carousel5"
-    },
-    {
-      src: "../assets/carousel6.jpg",
-      alt: "carousel6"
-    },
-    {
-      src: "../assets/carousel7.jpg",
-      alt: "carousel7"
-    },
-    {
-      src: "../assets/carousel8.jpg",
-      alt: "carousel8"
-    },
-    {
-      src: "../assets/carousel9.jpg",
-      alt: "carousel9"
-    },
-    {
-      src: "../assets/carousel10.jpg",
-      alt: "carousel0"
-    },
-    {
-      src: "../assets/carousel11.jpg",
-      alt: "carousel11"
-    },
-    {
-      src: "../assets/carousel12.jpg",
-      alt: "carousel12"
-    },
-    {
-      src: "../assets/carousel13.jpg",
-      alt: "carousel13"
-    },
-    {
-      src: "../assets/carousel14.jpg",
-      alt: "carousel14"
-    },
-    {
-      src: "../assets/carousel15.jpg",
-      alt: "carousel15"
-    },
-    {
-      src: "../assets/carousel16.jpg",
-      alt: "carousel16"
-    },
-    {
-      src: "../assets/carousel17.jpg",
-      alt: "carousel17"
-    },
-    {
-      src: "../assets/carousel18.jpg",
-      alt: "carousel18"
-    },
-    {
-      src: "../assets/carousel19.jpg",
-      alt: "carousel19"
-    },
-    {
-      src: "../assets/carousel20.jpg",
-      alt: "carousel20"
-    },
-    {
-      src: "../assets/carousel21.jpg",
-      alt: "carousel21"
-    },
-    {
-      src: "../assets/carousel22.jpg",
-      alt: "carousel22"
-    },
-    {
-      src: "../assets/carousel23.jpg",
-      alt: "carousel23"
-    },
-    {
-      src: "../assets/carousel24.jpg",
-      alt: "carousel24"
-    },
-    {
-      src: "../assets/carousel25.jpg",
-      alt: "carousel25"
-    },
-    {
-      src: "../assets/carousel26.jpg",
-      alt: "carousel26"
-    },
-    {
-      src: "../assets/carousel27.jpg",
-      alt: "carousel27"
-    },
-    {
-      src: "../assets/carousel28.jpg",
-      alt: "carousel28"
-    },
-    {
-      src: "../assets/carousel29.jpg",
-      alt: "carousel29"
-    },
-    {
-      src: "../assets/carousel30.jpg",
-      alt: "carousel30"
-    },
-    {
-      src: "../assets/carousel31.jpg",
-      alt: "carousel31"
-    },
-    {
-      src: "../assets/carousel32.jpg",
-      alt: "carousel32"
-    },
-    {
-      src: "../assets/carousel34.jpg",
-      alt: "carousel34"
-    },
-    {
-      src: "./assets/carousel35.jpg",
-      alt: "carousel35"
-    },
-    {
-      src: "../assets/carousel36.jpg",
-      alt: "carousel36"
-    },
-    {
-      src: "../assets/carousel37.jpg",
-      alt: "carousel37"
-    },
-    {
-      src: "../assets/carousel38.jpg",
-      alt: "carousel38"
-    },
-    {
-      src: "../assets/carousel39.jpg",
-      alt: "carousel39"
-    },
-    {
-      src: "../assets/carousel40.jpg",
-      alt: "carousel40"
-    },
-    {
-      src: "../assets/carousel41.jpg",
-      alt: "carousel41"
-    },
-    {
-      src: "../assets/carousel42.jpg",
-      alt: "carousel42"
-    },
-    {
-      src: "../assets/carousel43.jpg",
-      alt: "carousel43"
-    },
-    {
-      src: "../assets/carousel44.jpg",
-      alt: "carousel44"
-    },
-    {
-      src: "../assets/carousel45.jpg",
-      alt: "carousel45"
-    },
-    {
-      src: "../assets/carousel46.jpg",
-      alt: "carousel46"
-    },
-    {
-      src: "../assets/carousel47.jpg",
-      alt: "carousel47"
-    },
-    {
-      src: "../assets/carousel48.jpg",
-      alt: "carousel48"
-    },
-    {
-      src: "../assets/carousel49.jpg",
-      alt: "carousel49"
-    },
-    {
-      src: "../assets/carousel50.jpg",
-      alt: "carousel50"
-    },
-    {
-      src: "../assets/carousel51.jpg",
-      alt: "carousel51"
-    },
-    {
-      src: "../assets/carousel52.jpg",
-      alt: "carousel52"
-    },
-    {
-      src: "../assets/carousel53.jpg",
-      alt: "carousel53"
-    },
+  const images = [
+    HomeImg,
+    Carousel1,
+    Carousel2,
+    Carousel3,
+    Carousel4,
+    Carousel5,
+    Carousel6,
+    Carousel7,
+    Carousel8,
+    Carousel9,
+    Carousel10,
+    Carousel11,
+    Carousel12,
+    Carousel13,
+    Carousel14,
+    Carousel15,
+    Carousel16,
+    Carousel17,
+    Carousel18,
+    Carousel19,
+    Carousel20,
+    Carousel21,
+    Carousel22,
+    Carousel23,
+    Carousel24,
+    Carousel25,
+    Carousel26,
+    Carousel27,
+    Carousel28,
+    Carousel29,
+    Carousel30,
+    Carousel31,
+    Carousel32,
+    Carousel34,
+    Carousel35,
+    Carousel36,
+    Carousel37,
+    Carousel38,
+    Carousel39,
+    Carousel40,
+    Carousel41,
+    Carousel42,
+    Carousel43,
+    Carousel44,
+    Carousel45,
+    Carousel46,
+    Carousel47,
+    Carousel48,
+    Carousel49,
+    Carousel50,
+    Carousel51,
+    Carousel52,
+    Carousel53
   ];
 
   const [slide, setSlide] = useState(0);
   const [autoPlay, setAutoPlay] = useState(true);
 
   const nextSlide = () => {
-    setSlide((prev) => (prev === data.length - 1 ? 0 : prev + 1));
+    setSlide((prev) => (prev === images.length - 1 ? 0 : prev + 1));
   };
 
   const prevSlide = () => {
-    setSlide((prev) => (prev === 0 ? data.length - 1 : prev - 1));
+    setSlide((prev) => (prev === 0 ? images.length - 1 : prev - 1));
   };
 
   useEffect(() => {
     const timeOut = autoPlay
-      ? setTimeout(() => {
-          nextSlide();
-        }, 10000)
+      ? setTimeout(nextSlide, 10000)
       : null;
 
     return () => {
       if (timeOut) clearTimeout(timeOut);
     };
-  }, [slide, autoPlay]); // Dependencies: re-run only when these change
+  }, [slide, autoPlay]);
 
   return (
     <div
@@ -247,18 +139,15 @@ export const Carousel = () => {
       onMouseLeave={() => setAutoPlay(true)}
     >
       <BsArrowLeftCircleFill className="arrow arrow-left" onClick={prevSlide} />
-      {data.map((item, idx) => (
+      {images.map((item, idx) => (
         <img
           key={idx}
-          src={item.src} // Assume data contains preloaded URLs
-          alt={item.alt || "carousel image"}
+          src={item} // Use item directly since images are already imported
+          alt={`carousel ${idx + 1}`}
           className={slide === idx ? "slide" : "slide-hidden"}
         />
       ))}
-      <BsArrowRightCircleFill
-        className="arrow arrow-right"
-        onClick={nextSlide}
-      />
+      <BsArrowRightCircleFill className="arrow arrow-right" onClick={nextSlide} />
     </div>
   );
 };
