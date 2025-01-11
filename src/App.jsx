@@ -7,7 +7,6 @@ import Subheading from './components/Subheading.jsx'
 import { Carousel } from './components/Carousel.jsx'
 import {slides} from './carouseldata.json'
 import Footer from './components/Footer.jsx'
-import Information from "./components/Information.jsx"
 
 
 function App() {
@@ -18,7 +17,6 @@ function App() {
       <Navbar />
       <Subheading />
       <Carousel />
-      {/* <Information /> */}
       <Footer />
     </div>
   )

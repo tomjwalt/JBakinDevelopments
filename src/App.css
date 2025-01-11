@@ -1,5 +1,4 @@
 * {
-  /* background-color: #020d0c; */
   font-family: "sporty-pro", sans-serif;
   font-style: normal;
   margin: 0;
@@ -16,7 +15,7 @@ header {
 }
 
 .hero {
-  height: 5vh; /* Adjust to take up most of the space */
+  height: 5vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,7 +31,6 @@ header {
 .contact a {
   text-decoration: none;
   color: #b98a50;
-  
 }
 
 .contact a:hover {
@@ -53,23 +51,25 @@ header {
 }
 
 .logo-container {
-  flex: 1;
-  display: flex;
-  justify-content: flex-start;
+  /* flex: 1; */
+  display: grid;
+  justify-items: center;
   align-items: center;
 }
 
 .logo-img {
-  /* border: 1px solid red; */
   cursor: pointer;
   height: 100px;
   width: auto;
   max-width: 300px;
   flex: 1;
   text-align: center;
-  margin: auto;
+  margin: 0 auto;
   position: absolute;
-  left: 850px;
+  left: 870px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .facebook-logo {
@@ -123,6 +123,13 @@ ul {
   font-size: 12.5px;
 }
 
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
 .carousel {
   display: flex;
   justify-content: center;
@@ -130,8 +137,8 @@ ul {
   width: 600px;
   height: 400px;
   position: relative;
-  left: 625px;
-  bottom: -100px;
+  bottom: -50px;
+  margin: 0 auto;
 }
 
 .slide {
@@ -139,10 +146,14 @@ ul {
   box-shadow: 0px 0px 7px #666;
   width: 100%;
   height: 100%;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+  position: absolute;
 }
 
 .slide-hidden {
-  display: none;
+  opacity: 0;
+  overflow: hidden;
 }
 
 .arrow {
@@ -159,6 +170,7 @@ ul {
 
 .arrow-left {
   left: 1rem;
+  z-index: 1;
 }
 
 .arrow-right {
@@ -173,14 +185,11 @@ ul {
 
 .footer {
   display: flex;
-  justify-content: center;
   position: relative;
-  bottom: -14rem;
-  left: -3.5rem;
+  bottom: -11rem;
   color: #b98a50;
   letter-spacing: 2px;
-  margin: 10;
-  align-items: center;
+  padding: 0 700px;
 }
 
 .footer a {
@@ -190,10 +199,6 @@ ul {
 
 .footer a:hover {
   color: #efbe82;
-}
-
-.email-footer {
-  margin: 0 50px;
 }
 
 .information-text-container {
@@ -224,9 +229,11 @@ ul {
   color: #b98a50;
   text-align: center;
   position: relative;
-  top: 175px;
+  top: 100px;
   letter-spacing: 2px;
   padding: 0px 50px;
+  line-height: 1.2;
+
 }
 
 html,
@@ -243,6 +250,11 @@ header {
   padding: 10px 10px 10px 10px;
   background-color: #091110;
   border-radius: 2rem;
+  margin: 0 auto;
+  min-width: 50px;
+  flex: none;
+  margin-right: 10px;
+  position: sticky;
 }
 
 .phone-footer {
@@ -250,5 +262,9 @@ header {
   padding: 10px 10px 10px 10px;
   background-color: #091110;
   border-radius: 2rem;
+  margin: 0 auto;
+  min-width: 50px;
+  flex: none;
+  margin-left: 10px;
+  position: sticky;
 }
-

@@ -108,7 +108,7 @@ export const Carousel = () => {
     Carousel50,
     Carousel51,
     Carousel52,
-    Carousel53
+    Carousel53,
   ];
 
   const [slide, setSlide] = useState(0);
@@ -123,9 +123,7 @@ export const Carousel = () => {
   };
 
   useEffect(() => {
-    const timeOut = autoPlay
-      ? setTimeout(nextSlide, 10000)
-      : null;
+    const timeOut = autoPlay ? setTimeout(nextSlide, 10000) : null;
 
     return () => {
       if (timeOut) clearTimeout(timeOut);
@@ -133,21 +131,29 @@ export const Carousel = () => {
   }, [slide, autoPlay]);
 
   return (
-    <div
-      className="carousel"
-      onMouseEnter={() => setAutoPlay(false)}
-      onMouseLeave={() => setAutoPlay(true)}
-    >
-      <BsArrowLeftCircleFill className="arrow arrow-left" onClick={prevSlide} />
-      {images.map((item, idx) => (
-        <img
-          key={idx}
-          src={item} // Use item directly since images are already imported
-          alt={`carousel ${idx + 1}`}
-          className={slide === idx ? "slide" : "slide-hidden"}
+    <div className="carousel-container">
+      <div
+        className="carousel"
+        onMouseEnter={() => setAutoPlay(false)}
+        onMouseLeave={() => setAutoPlay(true)}
+      >
+        <BsArrowLeftCircleFill
+          className="arrow arrow-left"
+          onClick={prevSlide}
         />
-      ))}
-      <BsArrowRightCircleFill className="arrow arrow-right" onClick={nextSlide} />
+        {images.map((item, idx) => (
+          <img
+            key={idx}
+            src={item}
+            alt={`carousel ${idx + 1}`}
+            className={slide === idx ? "slide" : "slide-hidden"}
+          />
+        ))}
+        <BsArrowRightCircleFill
+          className="arrow arrow-right"
+          onClick={nextSlide}
+        />
+      </div>
     </div>
   );
 };
