@@ -16,7 +16,7 @@ const Callto = ({ phone, children }) => {
 
 const Navbar = () => {
   return (
-    <header>
+    <header className="navbar">
       <div className="contact">
         <Mailto email="jbakindevelopments@hotmail.com">jbakindevelopments@hotmail.com</Mailto>
         <Callto phone="07827028940">07827028940</Callto>

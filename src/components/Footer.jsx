@@ -16,7 +16,7 @@ const Footer = () => {
     <div className="body">
       <div className="paragraph">
         <p>
-          Welcome to our Lincoln based construction company! <br /> <br />
+          <h3>Welcome to our Lincoln based construction company! </h3> <br /> <br />
           We proudly serve Lincolnshire and Nottinghamshire, specializing in
           joinery and kitchens. We invite you to explore our gallery, showcasing
           examples of our previous work. If you have ideas you'd like to

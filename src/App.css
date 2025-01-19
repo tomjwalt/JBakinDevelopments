@@ -1,5 +1,4 @@
 * {
-  font-family: "sporty-pro", sans-serif;
   font-style: normal;
   margin: 0;
   padding: 0;
@@ -12,6 +11,15 @@ header {
   align-items: center;
   padding: 10px 20px;
   background-color: #1b1b1b3f;
+  flex-shrink: 1;
+  flex-grow: 1;
+  font-family: "sporty-pro", sans-serif;
+}
+
+.navbar {
+  flex-shrink: 1;
+  border: 1px solid lime;
+  overflow: hidden;
 }
 
 .hero {
@@ -20,6 +28,9 @@ header {
   justify-content: center;
   align-items: center;
   background-color: #1b1b1b3f;
+  text-align: center;
+  font-family: "sporty-pro", sans-serif;
+  flex-wrap: wrap;
 }
 
 .contact {
@@ -83,12 +94,21 @@ header {
 }
 
 .hero {
-  width: 100%;
-  text-align: center;
-
   display: flex;
-  background-size: cover;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  background-color: #1b1b1b3f;
+  text-align: center;
 }
+
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
 
 .content {
   display: flex;
@@ -111,7 +131,7 @@ header {
   display: flex;
   letter-spacing: 2px;
   color: #b98a50;
-  /* border: 1px solid red; */
+  border: 1px solid lime;
   width: 100vw;
   text-align: center;
   justify-content: space-evenly;
@@ -128,6 +148,9 @@ ul {
   justify-content: center;
   align-items: center;
   position: relative;
+  flex-shrink: 1;
+  flex-grow: 1;
+  border: 1px solid lime;
 }
 
 .carousel {
@@ -185,11 +208,16 @@ ul {
 
 .footer {
   display: flex;
-  position: relative;
-  bottom: -11rem;
+  justify-content: center; /* Center content */
+  align-items: center; /* Center vertically */
   color: #b98a50;
   letter-spacing: 2px;
-  padding: 0 700px;
+  padding: 20px; /* Responsive padding */
+  border: 1px solid lime;
+  flex-shrink: 0; /* Prevent shrinking */
+  flex-wrap: wrap;
+  position: relative;
+  bottom: -7rem;
 }
 
 .footer a {
@@ -201,39 +229,18 @@ ul {
   color: #efbe82;
 }
 
-.information-text-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #b98a50;
-  position: absolute;
-  bottom: 100px;
-}
-
-.text-container {
-  position: relative;
-}
-
-.specailist-list {
-  position: absolute;
-  color: #b98a50;
-  justify-content: center;
-  align-items: center;
-}
-
-.body {
-  position: absolute;
-}
-
 .paragraph {
   color: #b98a50;
   text-align: center;
   position: relative;
   top: 100px;
   letter-spacing: 2px;
-  padding: 0px 50px;
+  margin: 0px 40px;
   line-height: 1.2;
-
+  border: 1px solid lime;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 600;
 }
 
 html,
@@ -254,7 +261,7 @@ header {
   min-width: 50px;
   flex: none;
   margin-right: 10px;
-  position: sticky;
+  font-family: "sporty-pro", sans-serif;
 }
 
 .phone-footer {
@@ -266,5 +273,13 @@ header {
   min-width: 50px;
   flex: none;
   margin-left: 10px;
-  position: sticky;
+  font-family: "sporty-pro", sans-serif;
+}
+
+@media (max-width: 1284px) {
+  .hero {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
 }
