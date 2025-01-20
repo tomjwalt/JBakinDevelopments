@@ -93,7 +93,7 @@ header {
   color: inherit;
 }
 
-.hero {
+/* .hero {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -101,14 +101,12 @@ header {
   height: 5vh;
   background-color: #1b1b1b3f;
   text-align: center;
-}
+} */
 
 .service-list {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
-
-
 
 .content {
   display: flex;
@@ -136,6 +134,7 @@ header {
   text-align: center;
   justify-content: space-evenly;
   align-items: center;
+  
 }
 
 ul {
@@ -276,10 +275,72 @@ header {
   font-family: "sporty-pro", sans-serif;
 }
 
-@media (max-width: 1284px) {
-  .hero {
-    flex-direction: column;
-    height: auto;
-    padding: 20px;
+@media (max-width: 1287px) {
+  .subheading-text {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 1117px) {
+  .subheading-text {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 989px) {
+  .subheading-text {
+    font-size: 6px;
+  }
+}
+
+@media (max-width: 855px) {
+  .subheading-text {
+    font-size: 8px;
+    font-weight: 500;
+  }
+
+  .service-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .carousel {
+    bottom: -80px;
+  }
+}
+
+@media (max-width: 792px) {
+  .subheading-text {
+    font-size: 8px;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 725px) {
+  .subheading-text {
+    font-size: 8px;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 687px) {
+
+  .service-list {
+    line-height: 0.1;
+  }
+
+  .content {
+    line-height: 1.2;
+  }
+  .carousel {
+    bottom: -125px;
+  }
+
+  .paragraph {
+    top: 150px;
+  }
+
+  .footer {
+    bottom: -12rem;
   }
 }

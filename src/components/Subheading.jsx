@@ -6,16 +6,16 @@ const subheading = () => {
     <section className="hero">
       <div className="content">
         <div className="service-list">
-          <ul>Kitchens </ul>
-          <ul>Bathrooms </ul>
-          <ul>Outdoor Living Spaces </ul>
-          <ul>Concreting </ul>
-          <ul>Plumbing & Heating</ul>
-          <ul>Joinery & Carpentry</ul>
-          <ul>Driveways</ul>
-          <ul>Extensions</ul>
-          <ul>Bricklaying</ul>
-          <ul>General Building</ul>
+          <ul className="subheading-text">Kitchens </ul>
+          <ul className="subheading-text">Bathrooms </ul>
+          <ul className="subheading-text">Outdoor Living Spaces </ul>
+          <ul className="subheading-text">Concreting </ul>
+          <ul className="subheading-text">Plumbing & Heating</ul>
+          <ul className="subheading-text">Joinery & Carpentry</ul>
+          <ul className="subheading-text">Driveways</ul>
+          <ul className="subheading-text">Extensions</ul>
+          <ul className="subheading-text">Bricklaying</ul>
+          <ul className="subheading-text">General Building</ul>
         </div>
       </div>
     </section>
