@@ -216,7 +216,7 @@ ul {
   flex-shrink: 0; /* Prevent shrinking */
   flex-wrap: wrap;
   position: relative;
-  bottom: -7rem;
+  bottom: -6rem;
 }
 
 .footer a {
@@ -232,9 +232,10 @@ ul {
   color: #b98a50;
   text-align: center;
   position: relative;
-  top: 100px;
+  top: 90px;
   letter-spacing: 2px;
   margin: 0px 40px;
+  padding:  0px 500px;
   line-height: 1.2;
   border: 1px solid lime;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
@@ -275,9 +276,19 @@ header {
   font-family: "sporty-pro", sans-serif;
 }
 
+@media (max-width: 1352px) {
+ .paragraph {
+  padding: 0px 50px;
+ }
+}
+
 @media (max-width: 1287px) {
   .subheading-text {
     font-size: 10px;
+  }
+
+  .paragraph {
+    padding: 0px 100px ;
   }
 }
 
@@ -342,5 +353,55 @@ header {
 
   .footer {
     bottom: -12rem;
+  }
+
+  .subheading-text {
+    padding: -1000px;
+  }
+}
+
+@media (max-width: 605px) {
+  .carousel {
+    width: 550px;
+  }
+}
+
+@media (max-width: 550px) {
+  .paragraph {
+    padding: 50px;
+  }
+
+  .carousel {
+    width: 500px;
+    height: 400px;
+  }
+  
+}
+
+@media (max-width: 503px) {
+  .carousel {
+    width: 450px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 453px) {
+  .carousel {
+    width: 400px;
+    height: 275px;
+  }
+}
+
+@media (max-width: 407px) {
+  .carousel {
+    width: 380px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 379px) {
+  .carousel {
+    width: 360px;
+    height: 225px;
   }
 }
